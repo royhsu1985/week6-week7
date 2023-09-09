@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <script type="module" crossorigin src="/week6-week7/assets/main-102a403c.js"></script>
+    <link rel="stylesheet" href="/week6-week7/assets/main-0c0877f8.css">
+  </head>
+  <body>
+    <div class="fixed-top bg-body border-bottom border-2">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg py-3 py-lg-6 mx-n3">
+            <div class="container-fluid justify-content-between justify-content-lg-start ">
+                <!-- logo -->
+                <a href="./index.html" class="navbar-brand d-flex align-items-center me-1 me-sm-3 me-lg-12">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
+                        alt="7TAO 訂票活動網" class="logo me-lg-3">
+                    <span class="fs-4 me-1 d-none d-lg-block">7TAO</span>
+                    <span class="fs-9 font-notoSerif fw-bold d-none d-lg-block">活動訂票網</span>
+                </a>
+                <!-- 搜尋框 -->
+                <form class="form-search" role="search">
+                    <div class="input-group border border-2 border-primary">
+                        <input class="form-control" type="search" placeholder="探索活動" aria-label="Search">
+                        <button class="btn btn-primary btn-icon" type="submit">
+                            <i class="icofont-search-1 fs-10 fs-lg-8"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="d-none d-lg-block ms-auto">
+                    <ul class="navbar-nav ms-auto mb-lg-0 pt-4 py-lg-0">
+                        <li class="nav-item">
+                            <a href="./register.html" class="nav-link fs-8" aria-current="page">
+                                <i class="icofont-ui-file"></i>
+                                REGISTER
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-8" href="#" data-bs-toggle="modal" data-bs-target="#register-modal">
+                                <i class="icofont-ui-user"></i>
+                                LOGIN
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 漢堡選單 -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <div class="collapse navbar-collapse border-top border-2 border-lg-0" id="navbarSupportedContent">
+        <div class="container">
+            <ul class="navbar-nav ms-auto mb-lg-0 py-4 py-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link fs-8" aria-current="page" href="./register.html">
+                        <i class="icofont-ui-file"></i>
+                        REGISTER
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-8" href="#" data-bs-toggle="modal" data-bs-target="#register-modal">
+                        <i class="icofont-ui-user"></i>
+                        LOGIN
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border border-3">
+            <div class="modal-header position-relative border-3 p-8">
+                <h2 class="modal-title font-notoSerif fs-5 position-absolute top-50 start-50 translate-middle"
+                    id="registerModalLabel">立刻成為7TAO會員</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center py-12">
+                <p class="font-notoSans mb-8">
+                    立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br>
+                    您也可以先報名活動，日後再註冊帳號，<br>
+                    系統會在認證您的Email後，協助您找回舊的訂單。
+                </p>
+                <div>
+                    <a href="./register.html" class="btn btn-primary py-2 px-8">立即成為會員</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    <h1>我是contact</h1>
+    <footer class="py-6 py-lg-8 text-center border-top border-3">
+    <p class="fs-10 fs-lg-9 font-notoSans">© 7TAO七逃. All-Rights Reserved</p>
+</footer>
+    
+  </body>
+</html>
