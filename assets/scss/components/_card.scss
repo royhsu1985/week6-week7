@@ -1,0 +1,41 @@
+.card-img {
+    height: 210px;
+    object-fit: cover;
+    object-position: center;
+    
+    @include lg {
+        height: 255px;
+
+    }
+}
+
+.card-btn-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.card-link {
+
+    &:hover,
+    &:active {
+        text-decoration: underline;
+    }
+}
+
+.card-btn {
+
+    &:hover,
+    &:active {
+        &::after {
+            content: "";
+            position: absolute;
+            top: -4px;
+            left: -10px;
+            width: 29px;
+            height: 29px;
+            border-radius: 50%;
+            background-color: $warning;
+            z-index: -1;
+        }
+    }
+}

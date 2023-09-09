@@ -1,0 +1,30 @@
+.event-banner-img {
+    width: 100%;
+    height: 180px;
+
+    @include lg {
+        height: 550px;
+    }
+}
+
+.event-month-mb {
+    @include lg {
+        margin-bottom: 126px;
+    }
+}
+
+.event-month-mb::before {
+    content: "";
+    width: 2px;
+    height: 50px;
+    background-color: $primary;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(30deg);
+    @include lg{
+        height: 100px;
+        transform: translate(-50%, -60%) rotate(30deg);
+    }
+}

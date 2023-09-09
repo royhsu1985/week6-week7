@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7TAO-結帳</title>
+  <%- include('./layout/head'); -%>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <div class="container cart-mt">
+      <!-- 步驟bar -->
+      <div class="row justify-content-center mb-6 mb-lg-12">
+        <div class="col-lg-6">
+          <div class="stepbar d-flex justify-content-between 2">
+            <div class="d-flex flex-column align-items-center">
+              <div class="stepbar-num active d-flex justify-content-center align-items-center border mb-1 mb-lg-2">1
+              </div>
+              <p class="font-notoSerif fs-9">訂單確認</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <div class="stepbar-num d-flex justify-content-center align-items-center border mb-1 mb-lg-2">2</div>
+              <p class="font-notoSerif fs-9">結帳付款</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <div class="stepbar-num d-flex justify-content-center align-items-center border mb-1 mb-lg-2">3</div>
+              <p class="font-notoSerif fs-9">訂購結果</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 活動標題 -->
+      <div class="row justify-content-center mb-6 mb-lg-8">
+        <div class="col-lg-6">
+          <h1 class="font-notoSerif fw-bold fs-4 fs-lg-3 text-lg-center ">返老還童-制服聯誼</h1>
+        </div>
+      </div>
+      <!-- 票價資訊 -->
+      <div class="row justify-content-center mb-8 mb-lg-12">
+        <div class="col-lg-6">
+          <table class="table border-top border-2 mb-0">
+            <tbody class="font-notoSans">
+              <tr>
+                <th scope="row" class="font-notoSerif">日期</th>
+                <td class="text-end">2023/5/12</td>
+              </tr>
+              <tr>
+                <th scope="row" class="font-notoSerif">票種</th>
+                <td class="text-end">改頭換面票（含大改造）</td>
+              </tr>
+              <tr>
+                <th scope="row" class="font-notoSerif">票價</th>
+                <td class="text-end">$8000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 聯絡人 -->
+      <div class="row justify-content-center mb-12 mb-lg-15">
+        <div class="col-lg-6">
+          <div class="text-center mb-4">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+              alt="logo-icon" class="cart-sparkler-img mb-4">
+            <h2 class="font-notoSerif fs-5">聯絡人資料</h2>
+          </div>
+          <form class="row justify-content-center gx-0 font-notoSans">
+            <div class="col-12 mb-4">
+              <label for="contact-name" class="form-label">聯絡人姓名</label>
+              <input type="text" class="form-control fs-7 border border-2" id="contact-name"
+                placeholder="請輸入聯絡人名稱">
+            </div>
+
+            <div class="col-12 mb-4">
+              <label for="contact-email" class="form-label">Email</label>
+              <input type="text" class="form-control fs-7 border border-2" id="contact-email"
+                placeholder="請輸入Email">
+            </div>
+
+            <div class="col-12 mb-6 mb-lg-8">
+              <label for="contact-phone" class="form-label">手機</label>
+              <input type="text" class="form-control fs-7 border border-2" id="contact-phone"
+                placeholder="請輸入手機號碼">
+            </div>
+
+            <div class="col-lg-8 text-center">
+              <a href="./cart-payment.html" class="fs-7 btn btn-primary w-100 py-2 mb-4">
+                確認表單資料
+                <i class="icofont-rounded-double-right ms-1"></i>
+              </a>
+              <a href="#" class="link-dark">取消購票</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

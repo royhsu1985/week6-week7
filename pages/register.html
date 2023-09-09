@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iexnd</title>
+  <%- include('./layout/head'); -%>
+</head>
+
+<body>
+  <!-- 行動版，內容會不足瀏覽器高度 使用flex設定 -->
+  <div class="d-flex flex-column min-vh-100">
+    <%- include('./layout/header'); -%>
+      <!-- flex-grow-1 內容彈性延伸 -->
+      <div class="container cart-mt flex-grow-1">
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-4">
+            <div class="text-center">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+                alt="logo-icon" class="cart-sparkler-img mb-4">
+              <h1 class="font-notoSerif fs-5">會員登入</h1>
+            </div>
+          </div>
+        </div>
+        <!-- 輸入欄位 -->
+        <form class="row flex-column align-items-center">
+          <div class="col-lg-4 mb-4">
+            <label for="user-account" class="form-label">帳號</label>
+            <input type="email" class="form-control fs-7 border border-2" id="user-account" placeholder="請輸入帳號">
+          </div>
+          <div class="col-lg-4 mb-6 mb-lg-8">
+            <label for="user-account" class="form-label">密碼</label>
+            <input type="email" class="form-control fs-7 border border-2" id="user-account" placeholder="請輸入密碼">
+          </div>
+          <div class="col-lg-4 mb-6 mb-lg-8">
+            <button type="submit" class="fs-7 btn btn-primary w-100 py-2 mb-4">
+              登入
+              <i class="icofont-rounded-double-right ms-1"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <%- include('./layout/footer'); -%>
+  </div>
+
+  <script type="module" src="../main.js"></script>
+</body>
+
+</html>

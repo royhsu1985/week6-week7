@@ -1,0 +1,22 @@
+.badge {
+    line-height: 1.5;
+    padding: 4px 15px 4px 12px;
+
+    @include lg {
+        padding: 4px 23px 4px 20px;
+    }
+}
+
+.badge-outline {
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+    border-right: 1px solid $primary;
+    border-left: 4px solid $primary;
+    color: $primary;
+
+    &:hover,&:active{
+        background-color: $primary;
+        color: $white;
+        border-left: 4px solid $warning;
+    }
+}

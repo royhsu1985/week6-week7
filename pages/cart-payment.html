@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7TAO-結帳</title>
+  <%- include('./layout/head'); -%>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <div class="container cart-mt">
+      <!-- 步驟bar -->
+      <div class="row justify-content-center mb-6 mb-lg-12">
+        <div class="col-lg-6">
+          <div class="stepbar d-flex justify-content-between 2">
+            <div class="d-flex flex-column align-items-center">
+              <div class="stepbar-num active d-flex justify-content-center align-items-center border mb-1 mb-lg-2">
+                <i class="icofont-verification-check"></i>
+              </div>
+              <p class="font-notoSerif fs-9">訂單確認</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <div class="stepbar-num active d-flex justify-content-center align-items-center border mb-1 mb-lg-2">2
+              </div>
+              <p class="font-notoSerif fs-9">結帳付款</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <div class="stepbar-num d-flex justify-content-center align-items-center border mb-1 mb-lg-2">3</div>
+              <p class="font-notoSerif fs-9">訂購結果</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 活動標題 -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-6">
+          <h1 class="font-notoSerif fw-bold fs-4 fs-lg-3 text-lg-center ">返老還童-制服聯誼</h1>
+        </div>
+      </div>
+      <!-- 文字資訊 -->
+      <div class="text-center mb-6 mb-lg-8">
+        <p class="d-lg-inline-block font-notoSans fs-9 text-warning bg-primary  p-2 py-lg-3">您的訂單已保留，請在2023/5/30 04:32
+          前完成繳費。若逾期未繳款，系統將取消您的訂單。</p>
+      </div>
+      <!-- 票價資訊 -->
+      <div class="row justify-content-center mb-8 mb-lg-12">
+        <div class="col-lg-6">
+          <table class="table border-top border-2 mb-0">
+            <tbody class="font-notoSans">
+              <tr>
+                <th scope="row" class="font-notoSerif">訂單編號</th>
+                <td class="text-end">892746123</td>
+              </tr>
+              <tr>
+                <th scope="row" class="font-notoSerif">票劵</th>
+                <td class="text-end">改頭換面票（含大改造）$8000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 聯絡人 -->
+      <div class="row justify-content-center mb-12 mb-lg-15">
+        <div class="col-lg-6">
+          <div class="text-center mb-4">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+              alt="logo-icon" class="cart-sparkler-img mb-4">
+            <h2 class="font-notoSerif fs-5">結帳資訊</h2>
+          </div>
+          <form class="row justify-content-center gx-0 font-notoSans">
+            <div class="col-12 mb-4">
+              <label for="ticket-check" class="form-label">取票資訊</label>
+              <input type="text" class="form-control fs-7 border border-2 mb-1" id="ticket-check"
+                placeholder="請輸入身分證字號或護照號碼">
+              <p class="fs-10 fs-lg-9 text-dark">請輸入您的 <span class="text-danger">身分證字號</span> 供取票使用，外籍人士請輸入 <span
+                  class="text-danger">護照號碼</span></p>
+            </div>
+
+            <div class="col-12 mb-6 mb-lg-8">
+              <p class="mb-2">付款方式</p>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="payment" id="payment-credit">
+                <label class="form-check-label" for="payment-credit">
+                  信用卡
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="payment" id="payment-atm">
+                <label class="form-check-label" for="payment-atm">
+                  ATM虛擬帳號
+                </label>
+              </div>
+            </div>
+            <!-- 未登入，點擊此按鈕會跳至登入頁 register.html -->
+            <div class="col-lg-8 text-center">
+              <a href="./cart-success.html" class="fs-7 btn btn-primary w-100 py-2 mb-4">
+                確認訂單並繳費 $8000
+                <i class="icofont-rounded-double-right ms-1"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.stepbar {
+    width: 100%;
+    position: relative;
+}
+
+.stepbar::after {
+    content: "";
+    width: 90%;
+    height: 1px;
+    background-color: $primary;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    z-index: -1;
+
+    @include lg {
+        top: 30%;
+    }
+}
+
+.stepbar-num {
+    width: $spacer * 2;
+    height: $spacer * 2;
+    background-color: $secondary;
+
+    @include lg {
+        width: $spacer * 3;
+        height: $spacer * 3;
+    }
+
+    &.active {
+        background-color: $primary;
+        color: $warning;
+    }
+}

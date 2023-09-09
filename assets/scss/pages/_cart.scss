@@ -1,0 +1,12 @@
+.cart-mt {
+    margin-top: 88px;
+
+    @include lg {
+        margin-top: 163px;
+    }
+}
+
+.cart-sparkler-img {
+    width: $spacer * 2;
+    height: $spacer * 2;
+}

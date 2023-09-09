@@ -1,0 +1,16 @@
+.carousel-caption {
+    bottom: 0;
+    padding-bottom: $spacer * 1.5;
+}
+
+.carousel-title {
+    position: absolute;
+    top: $spacer;
+    left: $spacer * 2.5;
+    color: $white;
+
+    @include lg {
+        top: $spacer * 3;
+        left: $spacer * 3;
+    }
+}
